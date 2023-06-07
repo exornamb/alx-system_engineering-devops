@@ -1,3 +1,2 @@
 #!/bin/bash
-#print absolute path name
 find "$(pwd)" -name "0-current_working_directory" 
