@@ -1,2 +1,3 @@
 #!/bin/bash
-find . -type d -not -path '*/\.*' -print | grep -c /
+find . -type d -not -path '*/\.*' -exec sh -c '(ls -p "{}"|grep />/dev/null)||echo "{}"' \; | wc -l
+
